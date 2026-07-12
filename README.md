@@ -11,7 +11,7 @@ Platforms often assume that higher ratings drive more engagement, but does the s
 Online platforms rely on reviews as a self reinforcing signal. More reviews build more trust, which drives more purchases, which in turn generates more reviews. But not every rating pattern generates the same future engagement. This project asks which characteristics of a product's rating history, whether that's its average, its consistency, or specific psychological thresholds, best predict how many reviews it will receive next month.
 
 ## Data
-Data source: [Amazon Reviews 2023]([https://amazon-reviews-2023.github.io/](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023) (McAuley Lab, UCSD)
+Data source: [Amazon Reviews 2023](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023) (McAuley Lab, UCSD)
 
 The dataset comes from Amazon Reviews 2023 (All Beauty category), restructured into a panel of 100 products observed over approximately 75 months, giving more than 7,500 product month observations. For each product month, I tracked the cumulative average rating, cumulative rating variance, monthly review count, cumulative review count, and two threshold indicators marking whether a product had crossed 4.0 or 4.5 stars.
 
