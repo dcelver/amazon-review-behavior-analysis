@@ -55,3 +55,9 @@ Finally, relying on average rating alone as a health metric for a product can be
 The model uses current month review count to help predict next month's review count, which introduces a known issue in dynamic panel models called Nickell bias. Since each product in this dataset is observed over a fairly long period, around 75 months on average, the practical impact of this bias is likely small, though a dynamic panel method like Arellano Bond would address it more directly.
 
 These findings are also based only on the Beauty category, so the patterns might look different in categories with different purchase cycles, such as electronics versus everyday consumables.
+
+## Code
+
+The full analysis pipeline, from raw review data to the final Fixed Effects regression, is available in `analysis.py`. It covers panel construction, descriptive statistics, multicollinearity checks (VIF), and estimation of Pooled OLS, Random Effects, and Fixed Effects models, along with a Hausman test to justify the model choice.
+
+Requirements are listed in `requirements.txt`.
